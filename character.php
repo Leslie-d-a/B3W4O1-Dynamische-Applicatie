@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <title>Character - <?php echo $result[0]['name']; ?></title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="resources/css/style.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
 </head>
 <body>
 <header><h1><?php echo $result[0]['name']; ?></h1>
@@ -20,7 +20,7 @@
     <div class="detail">
         <div class="left">
             <img class="avatar" src="images/<?php echo $result[0]['avatar']; ?>">
-            <div class="stats" style="background-color: yellowgreen">
+            <div class="stats" style="background-color: <?php echo $result[0]['color']; ?>">
                 <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fas fa-heart"></i></span><?php echo $result[0]['health']; ?></li>
                     <li><span class="fa-li"><i class="fas fa-fist-raised"></i></span><?php echo $result[0]['attack']; ?></li>
